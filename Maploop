@@ -1,0 +1,27 @@
+
+// Iterate through the HashMap entries
+        System.out.println("HashMap entries:");
+        for (Map.Entry<String, Integer> entry : ages.entrySet()) {
+            String person = entry.getKey();
+            int age = entry.getValue();
+            System.out.println(person + " is " + age + " years old.");
+        }
+
+//using while 
+System.out.println("HashMap entries:");
+Iterator<Map.Entry<String, Integer>> iterator = ages.entrySet().iterator();
+while (iterator.hasNext()) {
+    Map.Entry<String, Integer> entry = iterator.next();
+    String person = entry.getKey();
+    int age = entry.getValue();
+    System.out.println(person + " is " + age + " years old.");
+}
+
+//using for standard 
+System.out.println("HashMap entries:");
+for (Iterator<Map.Entry<String, Integer>> iterator = ages.entrySet().iterator(); iterator.hasNext();) {
+    Map.Entry<String, Integer> entry = iterator.next();
+    String person = entry.getKey();
+    int age = entry.getValue();
+    System.out.println(person + " is " + age + " years old.");
+} 
