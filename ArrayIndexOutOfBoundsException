@@ -1,0 +1,14 @@
+public class HandledExceptionExample {
+    public static void main(String[] args) {
+        int[] numbers = { 1, 2, 3 };
+        try {
+            System.out.println(numbers[5]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("An exception occurred: " + e.getMessage());
+        }
+    }
+}
+
+In this second example, the exception is caught using a try-catch block, 
+and a message is printed indicating that an exception occurred.
+This prevents the program from crashing and provides more controlled error handling.
